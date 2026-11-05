@@ -364,6 +364,7 @@ html.lenis, html.lenis body { height: auto; }
   .nav__links a:hover { color: #fff; background: rgba(255, 255, 255, .09); }
   .nav__links a.is-active { color: var(--brass); }
 }
+@media (min-width: 1024px) and (max-width: 1179px) { .nav__links ul { gap: 0; } .nav__links a { padding: .6rem .75rem; } }
 
 .overlay {
   position: fixed; inset: 0; z-index: 130; visibility: hidden; opacity: 0; pointer-events: none;
@@ -767,7 +768,53 @@ html:not(.js) .marquee__row[data-dir="1"] .marquee__track { animation-direction:
 .qa__a > div { overflow: hidden; }
 .qa__a p { padding: 0 3.4rem 1.6rem 0; color: var(--muted); max-width: 40rem; }
 .js .qa.is-open .qa__a { grid-template-rows: 1fr; }
+.qa__a strong { color: #fff; font-weight: 700; }
+.qa__a .link { color: var(--cyan); }
+.qa__a .link:hover { color: #fff; }
 @media (min-width: 1024px) { .faq__grid { grid-template-columns: .85fr 1.15fr; gap: 6rem; align-items: start; } .faq .section__head { position: sticky; top: 7rem; } }
+
+/* ─────────────── 14b · UBICACIÓN ─────────────── */
+.visit { padding-top: clamp(2rem, 6vw, 4rem); }
+.visit__grid { display: grid; gap: 2.5rem; }
+.visit__addr {
+  display: flex; gap: 1rem; align-items: flex-start; margin-top: 2rem; font-style: normal; color: var(--muted); font-size: 1rem; line-height: 1.5;
+}
+.visit__addr b { display: block; font: 380 clamp(1.35rem, 3.8vw, 1.75rem)/1.2 var(--ff-display); letter-spacing: -.01em; color: #fff; margin-bottom: .35rem; text-wrap: balance; }
+.visit__addr-ic { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 18px; background: var(--coral); color: #fff; box-shadow: 0 12px 30px -10px rgba(255, 90, 54, .7); }
+.visit__addr-ic svg { width: 24px; height: 24px; stroke-width: 2; }
+.visit__refs { display: grid; gap: .7rem; margin-top: 1.6rem; }
+.visit__refs li {
+  display: flex; gap: .85rem; align-items: center; padding: .95rem 1.1rem; border-radius: 18px; border: 1px solid var(--line);
+  background: linear-gradient(160deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .015)); color: rgba(234, 247, 252, .86);
+}
+.visit__refs b { color: var(--brass); font-weight: 700; }
+.visit__refs svg { flex: none; width: 20px; height: 20px; color: var(--cyan); stroke-width: 2; }
+.visit__ctas { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+.visit__media { display: grid; gap: 1rem; }
+.visit__map {
+  position: relative; height: clamp(300px, 62vw, 440px); border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line);
+  background: var(--deep); box-shadow: 0 40px 90px -40px rgba(0, 0, 0, .9);
+}
+.visit__map iframe { display: block; width: 100%; height: 100%; border: 0; }
+.visit__unlock {
+  position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center; padding: 1rem; width: 100%;
+  background: linear-gradient(180deg, transparent 60%, rgba(2, 8, 15, .55)); border: 0; cursor: pointer;
+}
+.visit__unlock span {
+  font: 500 .62rem/1 var(--ff-mono); letter-spacing: .18em; text-transform: uppercase; color: #fff; padding: .7rem 1rem; border-radius: 999px;
+  background: rgba(4, 18, 31, .78); border: 1px solid rgba(255, 255, 255, .2); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: opacity .3s;
+}
+.visit__map.is-live .visit__unlock { display: none; }
+.visit__photo { position: relative; margin: 0; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 9; }
+.visit__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.visit__photo figcaption {
+  position: absolute; left: .8rem; bottom: .8rem; font: 500 .58rem/1 var(--ff-mono); letter-spacing: .16em; text-transform: uppercase; color: #fff;
+  padding: .55rem .8rem; border-radius: 999px; background: rgba(4, 18, 31, .72); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+@media (min-width: 1024px) {
+  .visit__grid { grid-template-columns: .9fr 1.1fr; gap: 5rem; align-items: center; }
+  .visit__media { grid-template-columns: 1fr; }
+}
 
 /* ─────────────── 15 · RESERVAR (arena) ─────────────── */
 .book { position: relative; background: var(--sand); color: var(--ink); padding-block: clamp(5rem, 11vw, 9rem); margin-top: clamp(2rem, 6vw, 5rem); }
@@ -786,6 +833,7 @@ html:not(.js) .marquee__row[data-dir="1"] .marquee__track { animation-direction:
 .info__ic svg { width: 22px; height: 22px; }
 .info small { display: block; font: 500 .6rem var(--ff-mono); letter-spacing: .22em; text-transform: uppercase; color: rgba(4, 18, 31, .55); margin-bottom: .2rem; }
 .info b { display: block; font-weight: 700; font-size: 1.05rem; }
+.info__sub { display: block; margin-top: .2rem; font-size: .9rem; line-height: 1.45; color: rgba(4, 18, 31, .7); }
 .link { display: inline-flex; align-items: center; gap: .4rem; margin-top: .3rem; font-weight: 700; font-size: .92rem; color: var(--cyan-d); border-bottom: 1.5px solid currentColor; padding-bottom: 1px; transition: gap .4s var(--ease), color .3s; }
 .link:hover { gap: .8rem; color: var(--ink); }
 .link svg { width: 16px; height: 16px; stroke-width: 2.2; }

@@ -29,7 +29,11 @@
     hours: '',                  // ← Ej: 'Mar a Dom · 11:00 a 19:00' (vacío = "Confírmalo por WhatsApp")
     instagram: '',              // ← URL del perfil (vacío = se oculta el icono)
     facebook: '',               // ← URL de la página (vacío = se oculta el icono)
-    mapsQuery: 'El Buen Sazón del Buzo Jonuta Tabasco',
+    // Ubicación: Av. José María Pino Suárez esq. Calle Álvaro Obregón, planta alta (arriba de la Frutería del Campo),
+    // frente al mercado y la biblioteca, Jonuta, Tab. Coordenadas = pin exacto de Google Maps que compartió el cliente
+    // (18°05'24.8"N 92°08'21.1"W). Si cambia el pin, basta con cambiar estos dos números: enlaces, mapa y botones se actualizan solos.
+    mapsLat: 18.090222,
+    mapsLng: -92.139194,
     maxDepth: 40                // metros que marca el medidor al llegar al final
   };
 
@@ -115,9 +119,15 @@
     }
     if (CONFIG.hours) { var h = $('#hoursText'); if (h) h.textContent = CONFIG.hours; }
 
-    var mapHref = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONFIG.mapsQuery);
-    var m = $('#mapLink'); if (m) m.href = mapHref;
+    // Mapa: todos los enlaces y el mapa integrado salen de las mismas coordenadas
+    var ll = CONFIG.mapsLat + ',' + CONFIG.mapsLng;
+    var mapHref = 'https://www.google.com/maps/search/?api=1&query=' + ll;
+    var dirHref = 'https://www.google.com/maps/dir/?api=1&destination=' + ll;
     $$('[data-map]').forEach(function (a) { a.href = mapHref; a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+    $$('[data-map-dir]').forEach(function (a) { a.href = dirHref; a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+    var frame = $('#mapFrame');
+    var embed = 'https://maps.google.com/maps?q=' + ll + '&hl=es&z=18&output=embed';
+    if (frame && frame.getAttribute('src') !== embed) frame.setAttribute('src', embed);
 
     var social = { instagram: CONFIG.instagram, facebook: CONFIG.facebook };
     var any = false;
@@ -723,7 +733,8 @@
       if (src) { var pre = new Image(); pre.src = src; }
       row.addEventListener('mouseenter', function () {
         if (!mq.matches) return;
-        if (src && src !== cur) { pimg.src = src; cur = src; }
+        if (!src) { preview.classList.remove('is-on'); on = false; return; }   // platillo sin foto grande
+        if (src !== cur) { pimg.src = src; cur = src; }
         preview.classList.add('is-on'); on = true;
       });
       row.addEventListener('mouseleave', function () { preview.classList.remove('is-on'); on = false; });
@@ -765,6 +776,19 @@
       cta.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
       cta.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
     });
+  }
+
+  /* ─────────────── 15b · MAPA DE UBICACIÓN ───────────────
+     El mapa queda "bloqueado" hasta que se toca, para que el scroll de la página
+     (rueda o dedo) no se quede atrapado dentro del mapa.                       */
+  function initMap() {
+    var box = $('#visitMap'), btn = $('#mapUnlock');
+    if (!box || !btn) return;
+    btn.addEventListener('click', function () { box.classList.add('is-live'); });
+    box.addEventListener('mouseleave', function () { box.classList.remove('is-live'); });
+    document.addEventListener('touchstart', function (e) {
+      if (!box.contains(e.target)) box.classList.remove('is-live');
+    }, { passive: true });
   }
 
   /* ─────────────── 15 · FAQ (acordeón animado) ─────────────── */
@@ -915,6 +939,7 @@
     initMenu();
     initTiles();
     initFAQ();
+    initMap();
     initForm();
     initCursor();
     initMagnetic();

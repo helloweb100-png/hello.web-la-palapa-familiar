@@ -7,14 +7,16 @@
 
   <!-- ═══════════════ SEO ═══════════════ -->
   <title>El Buen Sazón del Buzo | Palapa Familiar de Mariscos y Pescados en Jonuta, Tabasco</title>
-  <meta name="description" content="Palapa Familiar El Buen Sazón del Buzo en Jonuta, Tabasco. Mariscos y pescados con auténtico sabor tabasqueño: coctel de camarón, mojarra frita, ceviche, langosta y más. Reserva tu mesa por WhatsApp.">
-  <meta name="keywords" content="mariscos Jonuta, restaurante Jonuta Tabasco, pescados Tabasco, comida tabasqueña, palapa familiar, El Buen Sazón del Buzo, coctel de camarón, mojarra frita, ceviche, aguachile, molcajete de aguachile, arroz a la tumbada, pan de cazón, restaurante de mariscos, dónde comer en Jonuta">
+  <meta name="description" content="Palapa Familiar El Buen Sazón del Buzo en Jonuta, Tabasco: Av. Pino Suárez esquina Álvaro Obregón, planta alta, frente al mercado. Molcajetes de aguachile, cocteles de tarro, camarones, mojarras, acamaya, caldo de pejelagarto y más. Reserva por WhatsApp.">
+  <meta name="keywords" content="mariscos Jonuta, restaurante Jonuta Tabasco, pescados Tabasco, comida tabasqueña, palapa familiar, El Buen Sazón del Buzo, molcajete de aguachile, coctel de tarro, tostadas de pozol, camarones a la diabla, camarones empanizados, mojarra frita, mojarra empapelada, postas de robalo, acamaya al mojo de ajo, caldo de pejelagarto, caldo de pigua, arroz a la tumbada, pan de cazón, tacos gobernador, micheladas, restaurante de mariscos, dónde comer en Jonuta">
   <meta name="author" content="El Buen Sazón del Buzo">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#02060C">
   <meta name="color-scheme" content="dark">
   <meta name="geo.region" content="MX-TAB">
   <meta name="geo.placename" content="Jonuta, Tabasco">
+  <meta name="geo.position" content="18.090222;-92.139194">
+  <meta name="ICBM" content="18.090222, -92.139194">
   <!-- TODO producción: reemplazar por el dominio real -->
   <link rel="canonical" href="https://www.tudominio.com/">
 
@@ -52,13 +54,21 @@
     "description": "Palapa familiar de mariscos y pescados con sabor tabasqueño en Jonuta, Tabasco.",
     "servesCuisine": ["Mariscos", "Pescados", "Cocina tabasqueña"],
     "acceptsReservations": "True",
-    "image": ["img/mural-oceano.jpg", "img/coctel-camaron.jpg", "img/pescado-frito.jpg"],
+    "image": ["img/mural-oceano.jpg", "img/molcajete-callo-hacha.jpg", "img/mojarra-frita.jpg", "img/camarones-empanizados.jpg"],
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Av. José María Pino Suárez esq. Calle Álvaro Obregón, planta alta (arriba de la Frutería del Campo, frente al mercado)",
       "addressLocality": "Jonuta",
       "addressRegion": "Tabasco",
+      "postalCode": "86780",
       "addressCountry": "MX"
-    }
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.090222,
+      "longitude": -92.139194
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=18.090222,-92.139194"
   }
   </script>
 </head>
@@ -68,10 +78,14 @@
 <!--
   CRÉDITOS DE MEDIOS
   · Mural, logo y video (img/mural-oceano.jpg, logo-el-buzo.jpg, palapa-video.mp4, coctel-camaron.jpg, pescado-frito.jpg, video-poster.jpg): material del cliente.
-  · Platillos nuevos (tostadas-aguachile, molcajete-aguachile, pan-de-cazon, arroz-tumbada): fotos enviadas por el cliente por WhatsApp.
+  · Fotos de TODOS los platillos del menú y de la terraza (palapa-terraza.jpg): enviadas por el cliente por WhatsApp (oct. 2026).
+    Varias venían con la estrellita de Gemini en la esquina inferior derecha; se recortó el borde para quitarla.
     arroz-tumbada.jpg venía con marca de agua de Gemini (retocada); parece imagen generada por IA: pedir foto real del platillo.
-  · Fotografías de apoyo (camarones-*, langosta, ostiones, ceviche, mariscada, pescado-*, pulpo-mar): Pexels (licencia libre, sin atribución obligatoria).
-    Recomendación: sustituirlas por fotos propias del restaurante cuando existan (mismo nombre de archivo = cambio instantáneo).
+    caldo-pejelagarto.jpg solo llegó como captura de pantalla (baja resolución): pedir la foto original al cliente.
+  · El menú (34 platillos) es exactamente la lista que mandó el cliente. Si agrega o quita un platillo, editar la sección «05 · MENÚ».
+  · Ubicación: Av. José María Pino Suárez esq. Calle Álvaro Obregón, planta alta (arriba de la Frutería del Campo, frente al mercado
+    y la biblioteca). Coordenadas = pin exacto de Google Maps que compartió el cliente: 18.090222, -92.139194
+    (fuente única en script.js → CONFIG; el JSON-LD y las metaetiquetas geo de arriba se editan a mano si cambia).
 -->
 <!-- ═══════════════ SPRITE DE ICONOS ═══════════════ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -188,7 +202,7 @@
         <li><a href="#menu" data-cursor="Ver">Menú</a></li>
         <li><a href="#platillos" data-cursor="Ver">Platillos</a></li>
         <li><a href="#experiencia" data-cursor="Ver">Experiencia</a></li>
-        <li><a href="#preguntas" data-cursor="Ver">Dudas</a></li>
+        <li><a href="#ubicacion" data-cursor="Ver">Ubicación</a></li>
       </ul>
     </nav>
 
@@ -213,12 +227,13 @@
         <li><a href="#menu"><i>03</i>Menú</a></li>
         <li><a href="#platillos"><i>04</i>Platillos</a></li>
         <li><a href="#experiencia"><i>05</i>Experiencia</a></li>
-        <li><a href="#reservar"><i>06</i>Reservar</a></li>
+        <li><a href="#ubicacion"><i>06</i>Ubicación</a></li>
+        <li><a href="#reservar"><i>07</i>Reservar</a></li>
       </ol>
     </nav>
     <div class="overlay__foot">
       <a href="#reservar" class="btn btn--primary btn--block"><span class="btn__t">Quiero mi mesa</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span></a>
-      <p>Jonuta, Tabasco · Mariscos y pescados</p>
+      <p>Av. Pino Suárez esq. Álvaro Obregón · Jonuta, Tabasco</p>
     </div>
   </div>
 </div>
@@ -260,7 +275,7 @@
         <span>Hoy se antoja</span>
         <span class="roller" aria-hidden="true">
           <span class="roller__track">
-            <b>coctel de camarón</b><b>mojarra frita</b><b>ceviche fresco</b><b>langosta</b><b>pulpo al ajillo</b><b>coctel de camarón</b>
+            <b>coctel de tarro</b><b>mojarra frita</b><b>acamaya al mojo</b><b>tacos gobernador</b><b>pulpo al ajillo</b><b>coctel de tarro</b>
           </span>
         </span>
       </p>
@@ -294,12 +309,12 @@
 <section class="marquee" aria-label="Algunos platillos de la casa" data-zone="Arrecife">
   <div class="marquee__row" data-dir="-1">
     <div class="marquee__track">
-      <span>Coctel de camarón</span><svg><use href="#i-anchor"/></svg><span>Mojarra frita</span><svg><use href="#i-anchor"/></svg><span>Ceviche</span><svg><use href="#i-anchor"/></svg><span>Camarones al mojo de ajo</span><svg><use href="#i-anchor"/></svg><span>Pulpo</span><svg><use href="#i-anchor"/></svg><span>Langosta</span><svg><use href="#i-anchor"/></svg><span>Molcajete de aguachile</span><svg><use href="#i-anchor"/></svg><span>Tostadas de aguachile</span><svg><use href="#i-anchor"/></svg>
+      <span>Molcajete de aguachile</span><svg><use href="#i-anchor"/></svg><span>Camarones empanizados</span><svg><use href="#i-anchor"/></svg><span>Coctel de tarro</span><svg><use href="#i-anchor"/></svg><span>Camarones a la diabla</span><svg><use href="#i-anchor"/></svg><span>Tostadas de pozol</span><svg><use href="#i-anchor"/></svg><span>Pulpo enamorado</span><svg><use href="#i-anchor"/></svg><span>Camarones a la momia</span><svg><use href="#i-anchor"/></svg><span>Tacos gobernador</span><svg><use href="#i-anchor"/></svg>
     </div>
   </div>
   <div class="marquee__row marquee__row--solid" data-dir="1">
     <div class="marquee__track">
-      <span>Pejelagarto asado</span><svg><use href="#i-wave"/></svg><span>Caldo de mariscos</span><svg><use href="#i-wave"/></svg><span>Tostones</span><svg><use href="#i-wave"/></svg><span>Mariscada de la casa</span><svg><use href="#i-wave"/></svg><span>Pozol bien helado</span><svg><use href="#i-wave"/></svg><span>Ostiones frescos</span><svg><use href="#i-wave"/></svg><span>Arroz a la tumbada</span><svg><use href="#i-wave"/></svg><span>Pan de cazón</span><svg><use href="#i-wave"/></svg>
+      <span>Mojarra frita</span><svg><use href="#i-wave"/></svg><span>Caldo de pejelagarto</span><svg><use href="#i-wave"/></svg><span>Acamaya al mojo de ajo</span><svg><use href="#i-wave"/></svg><span>Postas de robalo</span><svg><use href="#i-wave"/></svg><span>Arroz a la tumbada</span><svg><use href="#i-wave"/></svg><span>Pan de cazón</span><svg><use href="#i-wave"/></svg><span>Micheladas de sabor</span><svg><use href="#i-wave"/></svg><span>Agua de matalí</span><svg><use href="#i-wave"/></svg>
     </div>
   </div>
 </section>
@@ -348,7 +363,7 @@
       <li class="chap" data-chap="2">
         <span class="chap__n">03 · Pescados</span>
         <h3>Del agua <em>al fuego.</em></h3>
-        <p>Fritos, a las brasas o al ajillo: pescados preparados al momento, con el sazón tabasqueño que nos distingue.</p>
+        <p>Fritos, empapelados o al mojo de ajo: pescados preparados al momento, con el sazón tabasqueño que nos distingue.</p>
       </li>
       <li class="chap chap--end" data-chap="3">
         <span class="chap__n">Y esto es solo la superficie</span>
@@ -370,100 +385,191 @@
     <header class="section__head">
       <p class="eyebrow" data-reveal>La carta del mar</p>
       <h2 class="h2" id="menu-title" data-split>Lo que se antoja, <em>se pide.</em></h2>
-      <p class="lead" data-reveal>Un recorrido por los sabores de la casa: del coctel helado al pescado dorado, con el toque tabasqueño que nos identifica. Toca cualquier platillo y pídelo por WhatsApp.</p>
+      <p class="lead" data-reveal>Cocteles de tarro, molcajetes de aguachile, camarones de mil formas, mojarras, caldos tabasqueños y micheladas de sabor. Toca cualquier platillo y pídelo por WhatsApp.</p>
     </header>
 
     <div class="tabs" role="tablist" aria-label="Categorías del menú" data-reveal>
-      <button class="tab is-active" role="tab" id="tab-0" aria-selected="true" aria-controls="panel-0" data-tab="0"><i>10 m</i>Para empezar</button>
-      <button class="tab" role="tab" id="tab-1" aria-selected="false" aria-controls="panel-1" data-tab="1" tabindex="-1"><i>14 m</i>Del río y del mar</button>
-      <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" data-tab="2" tabindex="-1"><i>18 m</i>Mariscos al fuego</button>
-      <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" data-tab="3" tabindex="-1"><i>22 m</i>Caldos y antojos</button>
-      <button class="tab" role="tab" id="tab-4" aria-selected="false" aria-controls="panel-4" data-tab="4" tabindex="-1"><i>26 m</i>Para refrescar</button>
+      <button class="tab is-active" role="tab" id="tab-0" aria-selected="true" aria-controls="panel-0" data-tab="0"><i>08 m</i>Cocteles y aguachiles</button>
+      <button class="tab" role="tab" id="tab-1" aria-selected="false" aria-controls="panel-1" data-tab="1" tabindex="-1"><i>12 m</i>Camarones</button>
+      <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" data-tab="2" tabindex="-1"><i>16 m</i>Pescados</button>
+      <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" data-tab="3" tabindex="-1"><i>20 m</i>Especialidades</button>
+      <button class="tab" role="tab" id="tab-4" aria-selected="false" aria-controls="panel-4" data-tab="4" tabindex="-1"><i>24 m</i>Caldos</button>
+      <button class="tab" role="tab" id="tab-5" aria-selected="false" aria-controls="panel-5" data-tab="5" tabindex="-1"><i>28 m</i>Bebidas</button>
     </div>
 
     <div class="menu__stage">
-      <!-- PANEL 0 -->
+      <!-- PANEL 0 · Cocteles y aguachiles (10) -->
       <div class="panel is-active" role="tabpanel" id="panel-0" aria-labelledby="tab-0" data-panel="0">
         <ul class="dishes">
-          <li class="row" data-img="img/coctel-camaron.jpg" data-dish="Coctel de camarón">
+          <li class="row" data-img="img/coctel-tarro-camaron.jpg" data-dish="Coctel de tarro de camarón">
             <span class="row__n">01</span>
-            <div class="row__body"><h3>Coctel de camarón</h3><p>Camarón, aguacate, pepino y cebolla morada en su jugo helado. Fresco desde el primer trago.</p></div>
+            <div class="row__body"><h3>Coctel de tarro de camarón</h3><p>Camarón en su jugo con aguacate, cebolla, pepino y cilantro, servido en tarro bien helado.</p></div>
             <span class="row__tag">Favorito</span>
-            <img class="row__thumb" src="img/coctel-camaron.jpg" alt="Coctel de camarón servido en tarro de vidrio con aguacate" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir un Coctel de camarón" aria-label="Pedir Coctel de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <img class="row__thumb" src="img/coctel-tarro-camaron.jpg" alt="Coctel de camarón en tarro de vidrio, decorado con aguacate y camarones" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Coctel de tarro de camarón" aria-label="Pedir Coctel de tarro de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/ceviche.jpg" data-dish="Ceviche">
+          <li class="row" data-img="img/coctel-tarro-mixto.jpg" data-dish="Coctel de tarro mixto">
             <span class="row__n">02</span>
-            <div class="row__body"><h3>Ceviche fresco</h3><p>Pescado curtido en limón con cebolla morada, chile y cilantro. Ácido, ligero e inolvidable.</p></div>
-            <span class="row__tag">Ligero</span>
-            <img class="row__thumb" src="img/ceviche.jpg" alt="Ceviche de pescado con cebolla morada y flores comestibles" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir un Ceviche fresco" aria-label="Pedir Ceviche fresco por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Coctel de tarro mixto</h3><p>Camarón, pulpo y caracol en un mismo tarro. Para quien no se decide por uno solo.</p></div>
+            <span class="row__tag">Mixto</span>
+            <img class="row__thumb" src="img/coctel-tarro-mixto.jpg" alt="Coctel mixto de camarón, pulpo y caracol en tarro de vidrio con aguacate" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Coctel de tarro mixto" aria-label="Pedir Coctel de tarro mixto por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/camarones-hielo.jpg" data-dish="Aguachile de camarón">
+          <li class="row" data-img="img/molcajete-chiltepin.jpg" data-dish="Molcajete de aguachile con chiltepín">
             <span class="row__n">03</span>
-            <div class="row__body"><h3>Aguachile de camarón</h3><p>Camarón en salsa verde de chile y limón. Para quienes sí aguantan el picor.</p></div>
+            <div class="row__body"><h3>Molcajete de aguachile con chiltepín</h3><p>Camarón en aguachile con el picor del chiltepín, mango, pepino y aguacate, servido en molcajete de piedra.</p></div>
             <span class="row__tag">Picosito</span>
-            <img class="row__thumb" src="img/camarones-hielo.jpg" alt="Camarones frescos sobre hielo con salsas" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir un Aguachile de camarón" aria-label="Pedir Aguachile de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <img class="row__thumb" src="img/molcajete-chiltepin.jpg" alt="Molcajete de piedra con aguachile de camarón, mango, pepino y aguacate" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Molcajete de aguachile con chiltepín" aria-label="Pedir Molcajete de aguachile con chiltepín por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/ostiones.jpg" data-dish="Ostiones frescos">
+          <li class="row" data-img="img/molcajete-cocido-crudo.jpg" data-dish="Molcajete de aguachile de camarón cocido y crudo">
             <span class="row__n">04</span>
-            <div class="row__body"><h3>Ostiones frescos</h3><p>Al natural, con limón y salsa. Directo del hielo a tu mesa.</p></div>
-            <span class="row__tag">Al natural</span>
-            <img class="row__thumb" src="img/ostiones.jpg" alt="Ostiones frescos sobre hielo con limón" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Ostiones frescos" aria-label="Pedir Ostiones frescos por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-          <li class="row" data-img="img/tostadas-aguachile.jpg" data-dish="Tostadas de aguachile">
-            <span class="row__n">05</span>
-            <div class="row__body"><h3>Tostadas de aguachile</h3><p>Camarón curtido en aguachile con pepino, cebolla morada, aguacate y cilantro sobre tostada crujiente.</p></div>
-            <span class="row__tag">Crujiente</span>
-            <img class="row__thumb" src="img/tostadas-aguachile.jpg" alt="Tres tostadas de aguachile de camarón con pepino, cebolla morada y aguacate sobre un plato turquesa" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tostadas de aguachile" aria-label="Pedir Tostadas de aguachile por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-          <li class="row" data-img="img/molcajete-aguachile.jpg" data-dish="Molcajete de aguachile">
-            <span class="row__n">06</span>
-            <div class="row__body"><h3>Molcajete de aguachile</h3><p>Camarón crudo, camarón cocido y callo de hacha en su aguachile, servidos en molcajete de piedra.</p></div>
+            <div class="row__body"><h3>Molcajete de aguachile de camarón cocido y crudo</h3><p>Camarón cocido y camarón crudo curtido en aguachile, con mango, pepino y aguacate. Llega en molcajete.</p></div>
             <span class="row__tag">Para compartir</span>
-            <img class="row__thumb" src="img/molcajete-aguachile.jpg" alt="Molcajete de aguachile con callo de hacha, camarones, pepino, aguacate y cilantro" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir un Molcajete de aguachile" aria-label="Pedir Molcajete de aguachile por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <img class="row__thumb" src="img/molcajete-cocido-crudo.jpg" alt="Molcajete de aguachile con camarón cocido y crudo, mango y aguacate frente al mural marino" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Molcajete de aguachile de camarón cocido y crudo" aria-label="Pedir Molcajete de aguachile de camarón cocido y crudo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/molcajete-aguachile.jpg" data-dish="Aguachile de camarón y callo de hacha">
+            <span class="row__n">05</span>
+            <div class="row__body"><h3>Aguachile de camarón y callo de hacha</h3><p>Camarón crudo, camarón cocido y callo de hacha en aguachile, con pepino, mango y aguacate, en molcajete.</p></div>
+            <span class="row__tag">De la casa</span>
+            <img class="row__thumb" src="img/molcajete-aguachile.jpg" alt="Molcajete de aguachile con callo de hacha, camarones, pepino, mango y aguacate" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Aguachile de camarón y callo de hacha" aria-label="Pedir Aguachile de camarón y callo de hacha por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/tostadas-pozol-camaron.jpg" data-dish="Tostadas de pozol de camarón">
+            <span class="row__n">06</span>
+            <div class="row__body"><h3>Tostadas de pozol de camarón</h3><p>Tostada de pozol crujiente con camarón curtido, cebolla morada, jitomate y aguacate.</p></div>
+            <span class="row__tag">Tabasqueña</span>
+            <img class="row__thumb" src="img/tostadas-pozol-camaron.jpg" alt="Dos tostadas de pozol con camarón, cebolla morada, jitomate y aguacate en plato turquesa" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tostadas de pozol de camarón" aria-label="Pedir Tostadas de pozol de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/tostadas-pozol-pulpo.jpg" data-dish="Tostadas de pozol de camarón y pulpo">
+            <span class="row__n">07</span>
+            <div class="row__body"><h3>Tostadas de pozol de camarón y pulpo</h3><p>Tostada de pozol con camarón y pulpo, aguacate, jitomate y cebolla morada.</p></div>
+            <span class="row__tag">Mixta</span>
+            <img class="row__thumb" src="img/tostadas-pozol-pulpo.jpg" alt="Tostada de pozol con camarón, pulpo, aguacate y cebolla morada" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tostadas de pozol de camarón y pulpo" aria-label="Pedir Tostadas de pozol de camarón y pulpo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/tostadas-aguachile.jpg" data-dish="Tostadas de pozol de aguachile">
+            <span class="row__n">08</span>
+            <div class="row__body"><h3>Tostadas de pozol de aguachile</h3><p>Camarón en aguachile con pepino, cebolla morada y aguacate sobre tostada de pozol.</p></div>
+            <span class="row__tag">Crujiente</span>
+            <img class="row__thumb" src="img/tostadas-aguachile.jpg" alt="Tres tostadas de pozol con aguachile de camarón, pepino, cebolla morada y aguacate en plato turquesa" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tostadas de pozol de aguachile" aria-label="Pedir Tostadas de pozol de aguachile por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/ensalada-camaron.jpg" data-dish="Ensalada de camarón">
+            <span class="row__n">09</span>
+            <div class="row__body"><h3>Ensalada de camarón</h3><p>Camarón con jitomate, cebolla y cilantro, coronada con aguacate y rodeada de pepino.</p></div>
+            <span class="row__tag">Fresca</span>
+            <img class="row__thumb" src="img/ensalada-camaron.jpg" alt="Ensalada de camarón con jitomate, aguacate en abanico y rodajas de pepino" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Ensalada de camarón" aria-label="Pedir Ensalada de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/pulpo-enamorado.jpg" data-dish="Pulpo enamorado">
+            <span class="row__n">10</span>
+            <div class="row__body"><h3>Pulpo enamorado</h3><p>Pulpo picado en aderezo cremoso con cebolla morada y cilantro. Con galletas saladas, pepino y aguacate.</p></div>
+            <span class="row__tag">Cremoso</span>
+            <img class="row__thumb" src="img/pulpo-enamorado.jpg" alt="Pulpo enamorado en aderezo cremoso con galletas saladas, pepino y aguacate" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Pulpo enamorado" aria-label="Pedir Pulpo enamorado por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
         </ul>
       </div>
 
-      <!-- PANEL 1 -->
+      <!-- PANEL 1 · Camarones (8) -->
       <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" data-panel="1" hidden>
         <ul class="dishes">
-          <li class="row" data-img="img/pescado-frito.jpg" data-dish="Mojarra frita">
+          <li class="row" data-img="img/camarones-empanizados.jpg" data-dish="Camarones grandes empanizados">
             <span class="row__n">01</span>
-            <div class="row__body"><h3>Mojarra frita</h3><p>Entera, dorada y crujiente. Con tostones, ensalada fresca y salsa de la casa.</p></div>
-            <span class="row__tag">Favorito</span>
-            <img class="row__thumb" src="img/pescado-frito.jpg" alt="Mojarra frita entera sobre plato de barro con tostones y salsa" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir una Mojarra frita" aria-label="Pedir Mojarra frita por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Camarones grandes empanizados</h3><p>Camarones grandes con empanizado crujiente. Con arroz, ensalada fresca y su salsa.</p></div>
+            <span class="row__tag">Crujientes</span>
+            <img class="row__thumb" src="img/camarones-empanizados.jpg" alt="Camarones grandes empanizados alrededor de arroz con aguacate, pepino y jitomate" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones grandes empanizados" aria-label="Pedir Camarones grandes empanizados por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/pescado-brasas.jpg" data-dish="Pescado a las brasas">
+          <li class="row" data-img="img/camarones-mojo-ajo.jpg" data-dish="Camarones al mojo de ajo">
             <span class="row__n">02</span>
-            <div class="row__body"><h3>Pescado a las brasas</h3><p>Asado al carbón con adobo de la casa y limón recién exprimido.</p></div>
-            <span class="row__tag">Al fuego</span>
-            <img class="row__thumb" src="img/pescado-brasas.jpg" alt="Pescado entero asado sobre parrilla con brasas" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir un Pescado a las brasas" aria-label="Pedir Pescado a las brasas por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Camarones al mojo de ajo</h3><p>Salteados en ajo y mantequilla. Con arroz, tostones y ensalada fresca.</p></div>
+            <span class="row__tag">Favorito</span>
+            <img class="row__thumb" src="img/camarones-mojo-ajo.jpg" alt="Camarones al mojo de ajo con tostones, arroz, aguacate y ensalada" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones al mojo de ajo" aria-label="Pedir Camarones al mojo de ajo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/pescado-limon.jpg" data-dish="Filete al ajillo">
+          <li class="row" data-img="img/camarones-mantequilla.jpg" data-dish="Camarones a la mantequilla">
             <span class="row__n">03</span>
-            <div class="row__body"><h3>Filete al ajillo</h3><p>Filete de pescado en mantequilla, ajo dorado y un toque de guajillo.</p></div>
-            <span class="row__tag">Suave</span>
-            <img class="row__thumb" src="img/pescado-limon.jpg" alt="Pescado con rodajas de limón y guarnición" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir un Filete al ajillo" aria-label="Pedir Filete al ajillo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Camarones a la mantequilla</h3><p>Bañados en mantequilla, con arroz blanco, aguacate y ensalada de jitomate, pepino y cebolla.</p></div>
+            <span class="row__tag">Suaves</span>
+            <img class="row__thumb" src="img/camarones-mantequilla.jpg" alt="Camarones a la mantequilla con arroz, aguacate, pepino, jitomate y cebolla morada" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones a la mantequilla" aria-label="Pedir Camarones a la mantequilla por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/pescado-brasas.jpg" data-dish="Pejelagarto asado">
+          <li class="row" data-img="img/camarones-gratinados.jpg" data-dish="Camarones gratinados">
             <span class="row__n">04</span>
-            <div class="row__body"><h3>Pejelagarto asado</h3><p>El pez emblema de Tabasco, asado a las brasas. Se come con tortilla, chile y limón.</p></div>
-            <span class="row__tag">Tabasqueño</span>
-            <img class="row__thumb" src="img/pescado-brasas.jpg" alt="Pescado asado a las brasas al estilo tabasqueño" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Pejelagarto asado" aria-label="Pedir Pejelagarto asado por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Camarones gratinados</h3><p>Camarón con cebolla y queso gratinado. Con arroz, aguacate y ensalada.</p></div>
+            <span class="row__tag">Con queso</span>
+            <img class="row__thumb" src="img/camarones-gratinados.jpg" alt="Camarones gratinados con cebolla y queso, arroz, aguacate y ensalada" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones gratinados" aria-label="Pedir Camarones gratinados por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/camarones-diabla.jpg" data-dish="Camarones a la diabla">
+            <span class="row__n">05</span>
+            <div class="row__body"><h3>Camarones a la diabla</h3><p>En salsa roja picosa. Con arroz, aguacate y ensalada fresca.</p></div>
+            <span class="row__tag">Picosos</span>
+            <img class="row__thumb" src="img/camarones-diabla.jpg" alt="Camarones a la diabla en salsa roja con arroz, aguacate y ensalada" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones a la diabla" aria-label="Pedir Camarones a la diabla por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/camarones-momia.jpg" data-dish="Camarones a la momia">
+            <span class="row__n">06</span>
+            <div class="row__body"><h3>Camarones a la momia</h3><p>Camarones envueltos en tocino y dorados. Con arroz, aguacate y ensalada.</p></div>
+            <span class="row__tag">Con tocino</span>
+            <img class="row__thumb" src="img/camarones-momia.jpg" alt="Camarones a la momia envueltos en tocino en plato de barro con arroz y aguacate" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones a la momia" aria-label="Pedir Camarones a la momia por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/camarones-arcoiris.jpg" data-dish="Camarones al arcoíris rellenos de queso">
+            <span class="row__n">07</span>
+            <div class="row__body"><h3>Camarones al arcoíris rellenos de queso</h3><p>Camarones rellenos de queso y envueltos en tocino. Con arroz, ensalada y su salsa.</p></div>
+            <span class="row__tag">Rellenos</span>
+            <img class="row__thumb" src="img/camarones-arcoiris.jpg" alt="Camarones rellenos de queso envueltos en tocino con arroz, aguacate y salsa" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones al arcoíris rellenos de queso" aria-label="Pedir Camarones al arcoíris rellenos de queso por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/brochetas-camaron.jpg" data-dish="Brochetas de camarón">
+            <span class="row__n">08</span>
+            <div class="row__body"><h3>Brochetas de camarón</h3><p>Camarones a la parrilla ensartados en brocheta, con limón.</p></div>
+            <span class="row__tag">A la parrilla</span>
+            <img class="row__thumb" src="img/brochetas-camaron.jpg" alt="Brochetas de camarón a la parrilla con limón" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Brochetas de camarón" aria-label="Pedir Brochetas de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PANEL 2 · Pescados (5) -->
+      <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" data-panel="2" hidden>
+        <ul class="dishes">
+          <li class="row" data-img="img/mojarra-frita.jpg" data-dish="Mojarra frita">
+            <span class="row__n">01</span>
+            <div class="row__body"><h3>Mojarra frita</h3><p>Entera, dorada y crujiente. Con arroz, ensalada fresca y limón.</p></div>
+            <span class="row__tag">Favorito</span>
+            <img class="row__thumb" src="img/mojarra-frita.jpg" alt="Mojarra frita entera en plato de barro con arroz, jitomate, pepino, cebolla morada y limón" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Mojarra frita" aria-label="Pedir Mojarra frita por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/mojarra-mojo-ajo.jpg" data-dish="Mojarra frita al mojo de ajo">
+            <span class="row__n">02</span>
+            <div class="row__body"><h3>Mojarra frita al mojo de ajo</h3><p>Mojarra frita bañada en ajo dorado. Con ensalada y salsa de la casa.</p></div>
+            <span class="row__tag">Al mojo</span>
+            <img class="row__thumb" src="img/mojarra-mojo-ajo.jpg" alt="Mojarra frita al mojo de ajo con láminas de ajo dorado, ensalada y salsa roja" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Mojarra frita al mojo de ajo" aria-label="Pedir Mojarra frita al mojo de ajo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/mojarra-empapelada.jpg" data-dish="Mojarra empapelada con camarón">
+            <span class="row__n">03</span>
+            <div class="row__body"><h3>Mojarra empapelada con camarón</h3><p>Mojarra cocinada en papel con camarón, pimientos, cebolla y cilantro. Sale jugosa y llena de sabor.</p></div>
+            <span class="row__tag">Empapelada</span>
+            <img class="row__thumb" src="img/mojarra-empapelada.jpg" alt="Mojarra empapelada con camarones, pimientos de colores, cebolla y cilantro" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Mojarra empapelada con camarón" aria-label="Pedir Mojarra empapelada con camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/postas-robalo.jpg" data-dish="Postas de robalo fritas">
+            <span class="row__n">04</span>
+            <div class="row__body"><h3>Postas de robalo fritas</h3><p>Postas de robalo fritas con tostones, aguacate y ensalada.</p></div>
+            <span class="row__tag">Robalo</span>
+            <img class="row__thumb" src="img/postas-robalo.jpg" alt="Postas de robalo fritas en plato de barro con tostones, aguacate y ensalada" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Postas de robalo fritas" aria-label="Pedir Postas de robalo fritas por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
           <li class="row" data-img="img/pan-de-cazon.jpg" data-dish="Pan de cazón">
             <span class="row__n">05</span>
-            <div class="row__body"><h3>Pan de cazón</h3><p>Capas de tortilla con frijol negro y cazón deshebrado, bañadas en salsa de jitomate. Un clásico del Golfo.</p></div>
+            <div class="row__body"><h3>Pan de cazón</h3><p>Capas de tortilla con frijol negro y cazón, bañadas en salsa de jitomate. Un clásico del Golfo.</p></div>
             <span class="row__tag">Del Golfo</span>
             <img class="row__thumb" src="img/pan-de-cazon.jpg" alt="Pan de cazón: tortillas en capas con frijol negro y cazón, salsa de jitomate, aguacate y chile asado" loading="lazy" width="120" height="120">
             <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Pan de cazón" aria-label="Pedir Pan de cazón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
@@ -471,103 +577,103 @@
         </ul>
       </div>
 
-      <!-- PANEL 2 -->
-      <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" data-panel="2" hidden>
-        <ul class="dishes">
-          <li class="row" data-img="img/camarones-plato.jpg" data-dish="Camarones al mojo de ajo">
-            <span class="row__n">01</span>
-            <div class="row__body"><h3>Camarones al mojo de ajo</h3><p>Ajo dorado, mantequilla y un toque de guajillo. Para mojar hasta la última tortilla.</p></div>
-            <span class="row__tag">Favorito</span>
-            <img class="row__thumb" src="img/camarones-plato.jpg" alt="Plato de camarones asados con hierbas" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Camarones al mojo de ajo" aria-label="Pedir Camarones al mojo de ajo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-          <li class="row" data-img="img/pulpo-mar.jpg" data-dish="Pulpo al ajillo">
-            <span class="row__n">02</span>
-            <div class="row__body"><h3>Pulpo al ajillo</h3><p>Tierno, salteado con ajo y chile guajillo. El rey del arrecife, en tu plato.</p></div>
-            <span class="row__tag">Del mural</span>
-            <img class="row__thumb" src="img/pulpo-mar.jpg" alt="Pulpo en su hábitat marino" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Pulpo al ajillo" aria-label="Pedir Pulpo al ajillo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-          <li class="row" data-img="img/langosta.jpg" data-dish="Langosta">
-            <span class="row__n">03</span>
-            <div class="row__body"><h3>Langosta</h3><p>Fresca y espectacular, para las ocasiones que merecen un brindis. Pregunta por la pieza del día.</p></div>
-            <span class="row__tag">Para celebrar</span>
-            <img class="row__thumb" src="img/langosta.jpg" alt="Langostas rojas frescas sobre hielo" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Langosta" aria-label="Pedir Langosta por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-          <li class="row" data-img="img/mariscada.jpg" data-dish="Mariscada de la casa">
-            <span class="row__n">04</span>
-            <div class="row__body"><h3>Mariscada de la casa</h3><p>Camarón, pulpo, pescado y más, para compartir en la mesa grande.</p></div>
-            <span class="row__tag">Para compartir</span>
-            <img class="row__thumb" src="img/mariscada.jpg" alt="Mariscada servida en cazuela con camarones, mejillones y langostinos" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir la Mariscada de la casa" aria-label="Pedir Mariscada de la casa por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- PANEL 3 -->
+      <!-- PANEL 3 · Especialidades (6) -->
       <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" data-panel="3" hidden>
         <ul class="dishes">
-          <li class="row" data-img="img/mariscada.jpg" data-dish="Caldo de mariscos">
+          <li class="row" data-img="img/pulpo-ajillo.jpg" data-dish="Pulpo al ajillo">
             <span class="row__n">01</span>
-            <div class="row__body"><h3>Caldo de mariscos</h3><p>Humeante, con camarón, pescado y hierbas frescas. Abraza desde la primera cucharada.</p></div>
-            <span class="row__tag">Caliente</span>
-            <img class="row__thumb" src="img/mariscada.jpg" alt="Cazuela de mariscos humeante" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Caldo de mariscos" aria-label="Pedir Caldo de mariscos por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Pulpo al ajillo</h3><p>Pulpo tierno salteado al ajo. Con arroz, tostones, aguacate y ensalada.</p></div>
+            <span class="row__tag">Del mural</span>
+            <img class="row__thumb" src="img/pulpo-ajillo.jpg" alt="Pulpo al ajillo con arroz, tostones, aguacate y ensalada en plato negro" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Pulpo al ajillo" aria-label="Pedir Pulpo al ajillo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/acamaya-mojo-ajo.jpg" data-dish="Acamaya al mojo de ajo">
+            <span class="row__n">02</span>
+            <div class="row__body"><h3>Acamaya al mojo de ajo</h3><p>Acamayas bañadas en mojo de ajo. Para pelarlas con la mano y no dejar nada.</p></div>
+            <span class="row__tag">Tabasqueña</span>
+            <img class="row__thumb" src="img/acamaya-mojo-ajo.jpg" alt="Acamayas al mojo de ajo servidas en plato de barro" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Acamaya al mojo de ajo" aria-label="Pedir Acamaya al mojo de ajo por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
           <li class="row" data-img="img/arroz-tumbada.jpg" data-dish="Arroz a la tumbada">
-            <span class="row__n">02</span>
-            <div class="row__body"><h3>Arroz a la tumbada</h3><p>Arroz caldoso con camarón, jaiba, pescado y mariscos en guiso de jitomate y chile. Estilo Alvarado, Veracruz.</p></div>
+            <span class="row__n">03</span>
+            <div class="row__body"><h3>Arroz a la tumbada</h3><p>Estilo Alvarado, Veracruz: arroz caldoso con pulpo, camarón, caracol, jaiba, pescado y hueva de topota o nácar.</p></div>
             <span class="row__tag">Veracruzano</span>
-            <img class="row__thumb" src="img/arroz-tumbada.jpg" alt="Arroz a la tumbada en cazuela de barro con camarones, jaiba, almejas y aguacate" loading="lazy" width="120" height="120">
+            <img class="row__thumb" src="img/arroz-tumbada.jpg" alt="Arroz a la tumbada en cazuela de barro con camarones, jaiba, pulpo y aguacate" loading="lazy" width="120" height="120">
             <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Arroz a la tumbada" aria-label="Pedir Arroz a la tumbada por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/pescado-frito.jpg" data-dish="Tostones">
-            <span class="row__n">03</span>
-            <div class="row__body"><h3>Tostones de plátano</h3><p>Plátano macho frito, dorado y crujiente. Perfecto para acompañar cualquier platillo.</p></div>
-            <span class="row__tag">Crujiente</span>
-            <img class="row__thumb" src="img/pescado-frito.jpg" alt="Tostones de plátano sobre pescado frito" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tostones de plátano" aria-label="Pedir Tostones por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
-          </li>
-          <li class="row" data-img="img/camarones-plato.jpg" data-dish="Empanadas de camarón">
+          <li class="row" data-img="img/tacos-gobernador.jpg" data-dish="Tacos gobernador con doble queso">
             <span class="row__n">04</span>
-            <div class="row__body"><h3>Empanadas de camarón</h3><p>Masa dorada rellena de camarón sazonado. Ideales para picar mientras llega lo demás.</p></div>
+            <div class="row__body"><h3>Tacos gobernador con doble queso</h3><p>Tortilla de harina con camarón, pico de gallo y doble queso.</p></div>
+            <span class="row__tag">Doble queso</span>
+            <img class="row__thumb" src="img/tacos-gobernador.jpg" alt="Tres tacos gobernador de camarón con queso y pico de gallo en base de metal" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tacos gobernador con doble queso" aria-label="Pedir Tacos gobernador con doble queso por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/empanadas-camaron.jpg" data-dish="Empanadas de camarón con doble queso">
+            <span class="row__n">05</span>
+            <div class="row__body"><h3>Empanadas de camarón con doble queso</h3><p>Doradas y crujientes, rellenas de camarón y doble queso, con pico de gallo encima.</p></div>
             <span class="row__tag">Para picar</span>
-            <img class="row__thumb" src="img/camarones-plato.jpg" alt="Camarones sazonados en plato" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Empanadas de camarón" aria-label="Pedir Empanadas de camarón por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <img class="row__thumb" src="img/empanadas-camaron.jpg" alt="Empanadas de camarón con doble queso y pico de gallo en la terraza del restaurante" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Empanadas de camarón con doble queso" aria-label="Pedir Empanadas de camarón con doble queso por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/tortillas-asadero.jpg" data-dish="Tortillas al asadero rellenas de camarón y queso">
+            <span class="row__n">06</span>
+            <div class="row__body"><h3>Tortillas al asadero rellenas de camarón y queso</h3><p>Tortilla dorada rellena de camarón y queso, con cebolla morada, pepino y jitomate.</p></div>
+            <span class="row__tag">Al asadero</span>
+            <img class="row__thumb" src="img/tortillas-asadero.jpg" alt="Tortillas rellenas de camarón y queso cortadas en triángulos con cebolla morada y pepino" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Tortillas al asadero rellenas de camarón y queso" aria-label="Pedir Tortillas al asadero rellenas de camarón y queso por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
         </ul>
       </div>
 
-      <!-- PANEL 4 -->
+      <!-- PANEL 4 · Caldos (3) -->
       <div class="panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" data-panel="4" hidden>
         <ul class="dishes">
-          <li class="row" data-img="img/coctel-camaron.jpg" data-dish="Pozol">
+          <li class="row" data-dish="Caldo de pejelagarto con plátano verde">
             <span class="row__n">01</span>
-            <div class="row__body"><h3>Pozol bien helado</h3><p>La bebida tabasqueña por excelencia, de maíz y cacao. Perfecta contra el calor.</p></div>
+            <div class="row__body"><h3>Caldo de pejelagarto con plátano verde</h3><p>El pez emblema de Tabasco en caldo, con plátano verde.</p></div>
             <span class="row__tag">Tabasqueño</span>
-            <img class="row__thumb" src="img/coctel-camaron.jpg" alt="Bebida fría servida en tarro de vidrio" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Pozol" aria-label="Pedir Pozol por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <img class="row__thumb" src="img/caldo-pejelagarto.jpg" alt="Caldo de pejelagarto con plátano verde en cazuela de barro" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Caldo de pejelagarto con plátano verde" aria-label="Pedir Caldo de pejelagarto con plátano verde por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/camarones-hielo.jpg" data-dish="Aguas frescas">
+          <li class="row" data-img="img/caldo-robalo-acamaya.jpg" data-dish="Caldo de robalo con acamaya">
             <span class="row__n">02</span>
-            <div class="row__body"><h3>Aguas frescas del día</h3><p>Preparadas con fruta de temporada y mucho hielo.</p></div>
-            <span class="row__tag">Refrescante</span>
-            <img class="row__thumb" src="img/camarones-hielo.jpg" alt="Hielo y limón para bebidas frías" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Aguas frescas" aria-label="Pedir Aguas frescas por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Caldo de robalo con acamaya</h3><p>Robalo y acamaya en un caldo calientito y lleno de sabor.</p></div>
+            <span class="row__tag">Caliente</span>
+            <img class="row__thumb" src="img/caldo-robalo-acamaya.jpg" alt="Caldo de robalo con acamaya en cazuela de barro" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Caldo de robalo con acamaya" aria-label="Pedir Caldo de robalo con acamaya por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
-          <li class="row" data-img="img/ostiones.jpg" data-dish="Michelada y cerveza">
+          <li class="row" data-img="img/caldo-pigua.jpg" data-dish="Caldo de acamaya o pigua">
             <span class="row__n">03</span>
-            <div class="row__body"><h3>Cerveza y michelada</h3><p>Bien fría, con limón y sal. La compañera ideal de cualquier mariscada.</p></div>
-            <span class="row__tag">Bien fría</span>
-            <img class="row__thumb" src="img/ostiones.jpg" alt="Limón y hielo para michelada" loading="lazy" width="120" height="120">
-            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Cerveza y michelada" aria-label="Pedir Cerveza y michelada por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+            <div class="row__body"><h3>Caldo de acamaya o pigua</h3><p>Caldo de acamaya o de pigua, el camarón gigante de río de Tabasco.</p></div>
+            <span class="row__tag">Del río</span>
+            <img class="row__thumb" src="img/caldo-pigua.jpg" alt="Caldo de pigua con camarones gigantes de río en plato de barro" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir Caldo de acamaya o pigua" aria-label="Pedir Caldo de acamaya o pigua por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PANEL 5 · Bebidas (2) -->
+      <div class="panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5" data-panel="5" hidden>
+        <ul class="dishes">
+          <li class="row" data-img="img/aguas-naturales.jpg" data-dish="Aguas naturales">
+            <span class="row__n">01</span>
+            <div class="row__body"><h3>Aguas naturales</h3><p>Pitaya, horchata, piña, pepino con chía, limón con chía y matalí.</p></div>
+            <span class="row__tag">Naturales</span>
+            <img class="row__thumb" src="img/aguas-naturales.jpg" alt="Botellas de aguas naturales de horchata, limón, pepino, pitaya y piña en el refrigerador" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir agua natural. ¿Qué sabores tienen hoy?" aria-label="Pedir Aguas naturales por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
+          </li>
+          <li class="row" data-img="img/micheladas-sabor.jpg" data-dish="Micheladas de sabor">
+            <span class="row__n">02</span>
+            <div class="row__body"><h3>Micheladas de sabor</h3><p>Maracuyá, frutos rojos, mango y clásica. Escarchadas y bien frías.</p></div>
+            <span class="row__tag">Bien frías</span>
+            <img class="row__thumb" src="img/micheladas-sabor.jpg" alt="Dos micheladas escarchadas con chamoy, una decorada con camarones" loading="lazy" width="120" height="120">
+            <a class="row__go" href="#reservar" data-wa-msg="Hola, quiero pedir una michelada de sabor. ¿Qué sabores tienen hoy?" aria-label="Pedir Micheladas de sabor por WhatsApp" data-cursor="Pedir"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a>
           </li>
         </ul>
       </div>
 
       <!-- Vista previa que sigue al cursor (solo escritorio) -->
-      <div class="preview" id="preview" aria-hidden="true"><img src="img/coctel-camaron.jpg" alt=""></div>
+      <div class="preview" id="preview" aria-hidden="true"><img src="img/coctel-tarro-camaron.jpg" alt=""></div>
     </div>
 
     <p class="menu__note" data-reveal><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg>Carta de referencia. Confirma disponibilidad, precios y platillos del día por WhatsApp.</p>
@@ -587,96 +693,118 @@
       </div>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/pescado-frito.jpg" alt="Mojarra frita entera servida en plato de barro con tostones, ensalada y salsa roja" loading="lazy" width="1261" height="710" style="object-position:38% 50%"></figure>
+        <figure class="dish__img"><img src="img/molcajete-callo-hacha.jpg" alt="Molcajete de aguachile con callo de hacha, camarones, mango y aguacate frente al mural del pulpo" loading="lazy" width="900" height="1200"></figure>
         <span class="dish__n">01</span>
+        <div class="dish__body">
+          <span class="dish__tag">Firma de la casa</span>
+          <h3>Aguachile de camarón y callo de hacha</h3>
+          <p>Camarón crudo, camarón cocido y callo de hacha en aguachile. Llega a la mesa en molcajete.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Aguachile de camarón y callo de hacha" data-magnetic data-cursor="Pedir"><span class="btn__t">Quiero el molcajete</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+        </div>
+      </article>
+
+      <article class="dish">
+        <figure class="dish__img"><img src="img/camarones-empanizados.jpg" alt="Camarones grandes empanizados alrededor de arroz con aguacate y ensalada" loading="lazy" width="1200" height="1070"></figure>
+        <span class="dish__n">02</span>
+        <div class="dish__body">
+          <span class="dish__tag">Crujientes</span>
+          <h3>Camarones grandes empanizados</h3>
+          <p>Crujientes por fuera, jugosos por dentro. Con arroz, ensalada y su salsa.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Camarones grandes empanizados" data-magnetic data-cursor="Pedir"><span class="btn__t">Se me antojaron</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+        </div>
+      </article>
+
+      <article class="dish">
+        <figure class="dish__img"><img src="img/mojarra-frita.jpg" alt="Mojarra frita entera en plato de barro con arroz, ensalada y limón" loading="lazy" width="1200" height="792" style="object-position:38% 50%"></figure>
+        <span class="dish__n">03</span>
         <div class="dish__body">
           <span class="dish__tag">Favorito de la casa</span>
           <h3>Mojarra frita</h3>
-          <p>Entera, dorada y crujiente. Con tostones, ensalada y la salsa que nadie quiere dejar.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir la Mojarra frita" data-magnetic data-cursor="Pedir"><span class="btn__t">Se me antojó</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <p>Entera, dorada y crujiente. Con arroz, ensalada fresca y limón.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Mojarra frita" data-magnetic data-cursor="Pedir"><span class="btn__t">Se me antojó</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/coctel-camaron.jpg" alt="Coctel de camarón en tarro de vidrio con aguacate y camarón en el borde" loading="lazy" width="1261" height="710" style="object-position:50% 50%"></figure>
-        <span class="dish__n">02</span>
-        <div class="dish__body">
-          <span class="dish__tag">Bien helado</span>
-          <h3>Coctel de camarón</h3>
-          <p>Camarón, aguacate y pepino en su jugo. Fresco desde el primer trago.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir un Coctel de camarón" data-magnetic data-cursor="Pedir"><span class="btn__t">Lo quiero ya</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
-        </div>
-      </article>
-
-      <article class="dish">
-        <figure class="dish__img"><img src="img/camarones-plato.jpg" alt="Camarones asados servidos en un plato blanco con lechuga" loading="lazy" width="1400" height="933"></figure>
-        <span class="dish__n">03</span>
-        <div class="dish__body">
-          <span class="dish__tag">Al fuego</span>
-          <h3>Camarones al mojo de ajo</h3>
-          <p>Ajo dorado, mantequilla y un toque de guajillo. Imposible comer solo uno.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Camarones al mojo de ajo" data-magnetic data-cursor="Pedir"><span class="btn__t">Quiero probarlos</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
-        </div>
-      </article>
-
-      <article class="dish">
-        <figure class="dish__img"><img src="img/langosta.jpg" alt="Langostas rojas frescas sobre hielo picado" loading="lazy" width="1400" height="1050"></figure>
+        <figure class="dish__img"><img src="img/arroz-tumbada.jpg" alt="Arroz a la tumbada en cazuela de barro con camarones, jaiba, pulpo y aguacate" loading="lazy" width="1080" height="734"></figure>
         <span class="dish__n">04</span>
         <div class="dish__body">
-          <span class="dish__tag">Para celebrar</span>
-          <h3>Langosta</h3>
-          <p>Para las ocasiones que merecen un brindis. Pregunta por la pieza del día.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Langosta" data-magnetic data-cursor="Pedir"><span class="btn__t">Reservar la mía</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <span class="dish__tag">Veracruzano</span>
+          <h3>Arroz a la tumbada</h3>
+          <p>Estilo Alvarado: pulpo, camarón, caracol, jaiba, pescado y hueva de topota.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Arroz a la tumbada" data-magnetic data-cursor="Pedir"><span class="btn__t">Pedirlo caliente</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/mariscada.jpg" alt="Mariscada de la casa en cazuela con camarones, mejillones y arroz" loading="lazy" width="1400" height="927"></figure>
+        <figure class="dish__img"><img src="img/acamaya-mojo-ajo.jpg" alt="Acamayas al mojo de ajo en plato de barro" loading="lazy" width="1140" height="736"></figure>
         <span class="dish__n">05</span>
         <div class="dish__body">
-          <span class="dish__tag">Para compartir</span>
-          <h3>Mariscada de la casa</h3>
-          <p>Camarón, pulpo, pescado y más. La mesa grande se merece una cazuela grande.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir la Mariscada de la casa" data-magnetic data-cursor="Pedir"><span class="btn__t">Pedirla para todos</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <span class="dish__tag">Tabasqueña</span>
+          <h3>Acamaya al mojo de ajo</h3>
+          <p>Acamayas bañadas en mojo de ajo. Un manjar del río para pelar con la mano.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Acamaya al mojo de ajo" data-magnetic data-cursor="Pedir"><span class="btn__t">Quiero probarla</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/ceviche.jpg" alt="Ceviche fresco con cebolla morada y flores comestibles en plato de cerámica" loading="lazy" width="1400" height="2100"></figure>
+        <figure class="dish__img"><img src="img/coctel-tarro-mixto.jpg" alt="Coctel mixto de camarón, pulpo y caracol en tarro con aguacate" loading="lazy" width="867" height="1200"></figure>
         <span class="dish__n">06</span>
         <div class="dish__body">
-          <span class="dish__tag">Ligero y fresco</span>
-          <h3>Ceviche fresco</h3>
-          <p>Limón, cebolla morada, chile y cilantro. El equilibrio perfecto entre ácido y mar.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir un Ceviche fresco" data-magnetic data-cursor="Pedir"><span class="btn__t">Clic aquí y a comer</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <span class="dish__tag">Bien helado</span>
+          <h3>Coctel de tarro mixto</h3>
+          <p>Camarón, pulpo y caracol en su jugo, servido en tarro bien helado.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Coctel de tarro mixto" data-magnetic data-cursor="Pedir"><span class="btn__t">Lo quiero ya</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/molcajete-aguachile.jpg" alt="Molcajete de aguachile con callo de hacha, camarón crudo y cocido, pepino y aguacate" loading="lazy" width="960" height="1280"></figure>
+        <figure class="dish__img"><img src="img/tacos-gobernador.jpg" alt="Tres tacos gobernador de camarón con queso y pico de gallo" loading="lazy" width="1200" height="675"></figure>
         <span class="dish__n">07</span>
         <div class="dish__body">
-          <span class="dish__tag">Para compartir</span>
-          <h3>Molcajete de aguachile</h3>
-          <p>Camarón crudo, camarón cocido y callo de hacha en su aguachile. Llega a la mesa en molcajete.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir un Molcajete de aguachile" data-magnetic data-cursor="Pedir"><span class="btn__t">Quiero el molcajete</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <span class="dish__tag">Doble queso</span>
+          <h3>Tacos gobernador con doble queso</h3>
+          <p>Tortilla de harina, camarón, pico de gallo y doble queso.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Tacos gobernador con doble queso" data-magnetic data-cursor="Pedir"><span class="btn__t">Pedir mis tacos</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/tostadas-aguachile.jpg" alt="Tres tostadas de aguachile de camarón con pepino, cebolla morada y aguacate sobre un plato turquesa" loading="lazy" width="1600" height="1200" style="object-position:62% 50%"></figure>
+        <figure class="dish__img"><img src="img/camarones-diabla.jpg" alt="Camarones a la diabla en salsa roja con arroz y aguacate" loading="lazy" width="1200" height="792" style="object-position:62% 50%"></figure>
         <span class="dish__n">08</span>
         <div class="dish__body">
-          <span class="dish__tag">Crujiente y fresco</span>
-          <h3>Tostadas de aguachile</h3>
-          <p>Camarón curtido con pepino, cebolla morada y aguacate sobre tostada crujiente.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Tostadas de aguachile" data-magnetic data-cursor="Pedir"><span class="btn__t">Pedir mis tostadas</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <span class="dish__tag">Picositos</span>
+          <h3>Camarones a la diabla</h3>
+          <p>En salsa roja picosa, con arroz, aguacate y ensalada.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Camarones a la diabla" data-magnetic data-cursor="Pedir"><span class="btn__t">Me animo</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+        </div>
+      </article>
+
+      <article class="dish">
+        <figure class="dish__img"><img src="img/tostadas-pozol-camaron.jpg" alt="Tostadas de pozol con camarón, cebolla morada y aguacate" loading="lazy" width="767" height="1200"></figure>
+        <span class="dish__n">09</span>
+        <div class="dish__body">
+          <span class="dish__tag">Tabasqueñas</span>
+          <h3>Tostadas de pozol de camarón</h3>
+          <p>Tostada de pozol crujiente con camarón curtido, cebolla morada y aguacate.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Tostadas de pozol de camarón" data-magnetic data-cursor="Pedir"><span class="btn__t">Pedir mis tostadas</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+        </div>
+      </article>
+
+      <article class="dish">
+        <figure class="dish__img"><img src="img/empanadas-camaron.jpg" alt="Empanadas de camarón con pico de gallo en la terraza del restaurante" loading="lazy" width="767" height="1200"></figure>
+        <span class="dish__n">10</span>
+        <div class="dish__body">
+          <span class="dish__tag">Para picar</span>
+          <h3>Empanadas de camarón con doble queso</h3>
+          <p>Doradas, crujientes y rellenas de camarón con doble queso.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Empanadas de camarón con doble queso" data-magnetic data-cursor="Pedir"><span class="btn__t">Quiero unas</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
 
       <article class="dish">
         <figure class="dish__img"><img src="img/pan-de-cazon.jpg" alt="Pan de cazón con salsa de jitomate, aguacate y chile asado" loading="lazy" width="1600" height="1200"></figure>
-        <span class="dish__n">09</span>
+        <span class="dish__n">11</span>
         <div class="dish__body">
           <span class="dish__tag">Un clásico del Golfo</span>
           <h3>Pan de cazón</h3>
@@ -686,16 +814,15 @@
       </article>
 
       <article class="dish">
-        <figure class="dish__img"><img src="img/arroz-tumbada.jpg" alt="Arroz a la tumbada en cazuela de barro con camarones, jaiba, almejas y aguacate" loading="lazy" width="1080" height="734" style="object-position:50% 50%"></figure>
-        <span class="dish__n">10</span>
+        <figure class="dish__img"><img src="img/micheladas-sabor.jpg" alt="Micheladas escarchadas con chamoy, una decorada con camarones" loading="lazy" width="1080" height="961"></figure>
+        <span class="dish__n">12</span>
         <div class="dish__body">
-          <span class="dish__tag">Veracruzano</span>
-          <h3>Arroz a la tumbada</h3>
-          <p>Arroz caldoso con camarón, jaiba y pescado en un guiso de jitomate y chile.</p>
-          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Arroz a la tumbada" data-magnetic data-cursor="Pedir"><span class="btn__t">Pedirlo caliente</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
+          <span class="dish__tag">Para acompañar</span>
+          <h3>Micheladas de sabor</h3>
+          <p>Maracuyá, frutos rojos, mango o clásica. Escarchadas y bien frías.</p>
+          <a href="#reservar" class="btn btn--glass" data-wa-msg="Hola, quiero pedir Micheladas de sabor" data-magnetic data-cursor="Pedir"><span class="btn__t">Una bien fría</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span></a>
         </div>
       </article>
-
       <div class="rail__end">
         <h3>¿Cuál será <em>el tuyo?</em></h3>
         <p>Reserva tu mesa y llega directo a lo bueno.</p>
@@ -826,7 +953,7 @@
     <div class="faq__list" data-reveal>
       <details class="qa" open>
         <summary><span>¿Dónde están ubicados?</span><i><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg></i></summary>
-        <div class="qa__a"><div><p>Estamos en Jonuta, Tabasco. En la sección de reservaciones encontrarás el botón “Cómo llegar” que abre la ruta directo en tu mapa.</p></div></div>
+        <div class="qa__a"><div><p>En Av. José María Pino Suárez esquina con Calle Álvaro Obregón, en Jonuta, Tabasco. Estamos en <strong>planta alta, arriba de la Frutería del Campo</strong>, frente al mercado y la biblioteca. <a class="link" href="#ubicacion">Ver el mapa</a></p></div></div>
       </details>
       <details class="qa">
         <summary><span>¿Cómo reservo mi mesa?</span><i><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg></i></summary>
@@ -834,7 +961,7 @@
       </details>
       <details class="qa">
         <summary><span>¿Qué tipo de comida sirven?</span><i><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg></i></summary>
-        <div class="qa__a"><div><p>Mariscos y pescados con sabor tabasqueño: cocteles, ceviches, pescados fritos o a las brasas, camarones, pulpo, langosta y mucho más.</p></div></div>
+        <div class="qa__a"><div><p>Mariscos y pescados con sabor tabasqueño: cocteles de tarro, molcajetes de aguachile, tostadas de pozol, camarones en ocho preparaciones, mojarras, postas de robalo, pulpo, acamaya, caldos de pejelagarto, robalo y pigua, arroz a la tumbada, micheladas de sabor y aguas naturales. Mira la <a class="link" href="#menu">carta completa</a>.</p></div></div>
       </details>
       <details class="qa">
         <summary><span>¿Pueden atender grupos y celebraciones?</span><i><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg></i></summary>
@@ -844,6 +971,49 @@
         <summary><span>¿Puedo pedir para llevar?</span><i><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg></i></summary>
         <div class="qa__a"><div><p>Escríbenos por WhatsApp y te confirmamos disponibilidad y tiempos de entrega de tu pedido.</p></div></div>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 09b · UBICACIÓN ═══════════════ -->
+<section class="visit section" id="ubicacion" data-zone="Fondo" aria-labelledby="visit-title">
+  <div class="wrap visit__grid">
+    <div class="visit__copy">
+      <p class="eyebrow" data-reveal>Cómo llegar</p>
+      <h2 class="h2" id="visit-title" data-split>Te esperamos <em>en planta alta.</em></h2>
+
+      <address class="visit__addr" data-reveal>
+        <span class="visit__addr-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
+        <span>
+          <b>Av. José María Pino Suárez esquina con Calle Álvaro Obregón</b>
+          Jonuta, Tabasco, México
+        </span>
+      </address>
+
+      <ul class="visit__refs" data-reveal aria-label="Referencias para encontrarnos">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up"/></svg><span><b>Planta alta</b>, arriba de la Frutería del Campo</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-anchor"/></svg><span>Frente al <b>mercado</b> y la <b>biblioteca</b></span></li>
+      </ul>
+
+      <div class="visit__ctas" data-reveal>
+        <a class="btn btn--primary" data-map-dir href="https://www.google.com/maps/dir/?api=1&amp;destination=18.090222,-92.139194" target="_blank" rel="noopener noreferrer" data-magnetic data-cursor="Ir">
+          <span class="btn__t">Cómo llegar</span><span class="btn__i"><svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></span>
+        </a>
+        <a class="btn btn--ghost" data-map href="https://www.google.com/maps/search/?api=1&amp;query=18.090222,-92.139194" target="_blank" rel="noopener noreferrer" data-magnetic data-cursor="Abrir">
+          <span class="btn__t">Abrir en Google Maps</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="visit__media" data-reveal>
+      <div class="visit__map" id="visitMap">
+        <iframe id="mapFrame" title="Mapa: El Buen Sazón del Buzo, Av. Pino Suárez esquina Álvaro Obregón, Jonuta, Tabasco" src="https://maps.google.com/maps?q=18.090222,-92.139194&amp;hl=es&amp;z=18&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <button type="button" class="visit__unlock" id="mapUnlock" aria-label="Activar el mapa para moverlo" data-cursor="Mover"><span>Toca para mover el mapa</span></button>
+      </div>
+      <figure class="visit__photo">
+        <img src="img/palapa-terraza.jpg" alt="Familia comiendo en la terraza de planta alta del restaurante, con vista a la calle" loading="lazy" width="1200" height="900">
+        <figcaption>Así se ve la calle desde nuestra terraza</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -861,8 +1031,9 @@
       <ul class="info" data-reveal>
         <li>
           <span class="info__ic"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
-          <div><small>Dónde estamos</small><b>Jonuta, Tabasco, México</b>
-            <a class="link" id="mapLink" href="https://www.google.com/maps/search/?api=1&amp;query=El+Buen+Saz%C3%B3n+del+Buzo+Jonuta+Tabasco" target="_blank" rel="noopener noreferrer">Cómo llegar <svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a></div>
+          <div><small>Dónde estamos</small><b>Av. Pino Suárez esq. Álvaro Obregón</b>
+            <span class="info__sub">Planta alta, arriba de la Frutería del Campo · Frente al mercado · Jonuta, Tabasco</span>
+            <a class="link" id="mapLink" data-map-dir href="https://www.google.com/maps/dir/?api=1&amp;destination=18.090222,-92.139194" target="_blank" rel="noopener noreferrer">Cómo llegar <svg viewBox="0 0 24 24"><use href="#i-arrow-ur"/></svg></a></div>
         </li>
         <li>
           <span class="info__ic"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg></span>
@@ -969,6 +1140,7 @@
           <li><a href="#menu">Menú</a></li>
           <li><a href="#platillos">Platillos de la casa</a></li>
           <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
           <li><a href="#preguntas">Preguntas frecuentes</a></li>
         </ul>
       </nav>
@@ -976,8 +1148,8 @@
       <div class="foot__col">
         <h4>Visítanos</h4>
         <ul>
-          <li>Jonuta, Tabasco, México</li>
-          <li><a href="#mapLink" data-map>Cómo llegar</a></li>
+          <li>Av. Pino Suárez esq. Álvaro Obregón<br>Planta alta, arriba de la Frutería del Campo<br>Frente al mercado · Jonuta, Tabasco</li>
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=18.090222,-92.139194" data-map-dir target="_blank" rel="noopener noreferrer">Cómo llegar</a></li>
           <li><a href="#reservar" data-wa-msg="Hola, quiero más información de El Buen Sazón del Buzo">Escríbenos por WhatsApp</a></li>
         </ul>
         <div class="social">
