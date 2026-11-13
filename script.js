@@ -24,7 +24,7 @@
   /* ─────────────── 00 · CONFIGURACIÓN DEL NEGOCIO ───────────────
      ÚNICO lugar que hay que editar antes de publicar.            */
   var CONFIG = {
-    whatsapp: '52XXXXXXXXXX',   // ← Número con lada de país, solo dígitos. Ej: '5219131234567'
+    whatsapp: '529131030805',   // ← Número con lada de país, solo dígitos. Ej: '5219131234567'
     phoneDisplay: '',           // ← Ej: '+52 913 123 4567' (vacío = no se muestra)
     hours: '',                  // ← Ej: 'Mar a Dom · 11:00 a 19:00' (vacío = "Confírmalo por WhatsApp")
     instagram: '',              // ← URL del perfil (vacío = se oculta el icono)
